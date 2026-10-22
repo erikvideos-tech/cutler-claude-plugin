@@ -1,0 +1,10 @@
+{
+  "name": "cutler",
+  "version": "1.0.0",
+  "description": "Cutler turns Claude into a video editor: footage analysis, waveform sync and multicam, cut tables checked against the media, show graphics, previews and verified Final Cut Pro timelines. Needs Cutler.app on this Mac (macOS 14+, Apple Silicon).",
+  "author": { "name": "Mira Contents", "email": "support@miracontents.com", "url": "https://cutler.miracontents.com" },
+  "homepage": "https://cutler.miracontents.com",
+  "repository": "https://github.com/erikvideos-tech/cutler-claude-plugin",
+  "license": "MIT",
+  "keywords": ["video editing", "final cut pro", "fcpxml", "multicam", "audio sync", "transcription", "mcp", "macos", "video"]
+}

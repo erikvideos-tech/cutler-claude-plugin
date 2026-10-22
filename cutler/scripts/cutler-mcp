@@ -1,0 +1,14 @@
+#!/bin/sh
+# Cutler's MCP server for Claude Code.
+# This plugin carries no engine: it starts the cutler-mcp that ships INSIDE
+# Cutler.app, so the connector and the engine are always the same build.
+#   CUTLER_APP   where Cutler.app is (default /Applications/Cutler.app)
+# stdout is the protocol: every message here goes to stderr.
+APP="${CUTLER_APP:-/Applications/Cutler.app}"
+BIN="$APP/Contents/Resources/mcp/cutler-mcp"
+if [ -x "$BIN" ]; then
+  export CUTLER_APP="$APP"
+  exec "$BIN" "$@"
+fi
+echo "cutler: Cutler.app was not found at $APP. Get Cutler at https://cutler.miracontents.com, or set CUTLER_APP to where it is." >&2
+exit 1

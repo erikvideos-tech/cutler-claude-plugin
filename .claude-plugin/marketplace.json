@@ -1,0 +1,15 @@
+{
+  "name": "mira-contents",
+  "description": "Mira Contents' Claude Code plugins: Cutler, the editing room that turns Claude into a video editor.",
+  "owner": {
+    "name": "Mira Contents",
+    "email": "support@miracontents.com"
+  },
+  "plugins": [
+    {
+      "name": "cutler",
+      "source": "./cutler",
+      "description": "Cutler turns Claude Code into a video editor: it analyses your footage, syncs cameras and mics, cuts with a reason for every clip, renders previews and exports verified Final Cut Pro timelines. Needs Cutler.app on your Mac."
+    }
+  ]
+}
